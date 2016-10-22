@@ -1,5 +1,8 @@
-#summary 
+#when metaprogramming
+- compile time only
+- can't reply on: mutability, virtual functions, other RTTI, etc
 
+#some technics
 - metafunction member types, static const data members, and constexpr member functions to express intermediate and final metafunction results. [example](example.cpp)
 - metafunction calls (possibly recursive), inheritance, and aliasing to factor commonalities. [example](example.cpp)
 - template specializations (complete and partial) for metafunction argument pattern-matching. [example](example.cpp)
