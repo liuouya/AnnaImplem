@@ -6,8 +6,9 @@
 - metafunction member types, static const data members, and constexpr member functions to express intermediate and final metafunction results. [abs](abs.cpp) [gcd](gcd.cpp)
 - metafunction calls (possibly recursive), inheritance, and aliasing to factor commonalities. [rank](rank.cpp) [rank_revised](rank_revised.cpp)
 - template specializations (complete and partial) for metafunction argument pattern-matching. [type_traits](type_traits.cpp)
-- SFINAE to direct overload resolution. [type_traits](type_traits.cpp)
-- unevaluated oeprands, such as function calls to map types. [example](example.cpp)
+- variadic template and parameter pack. [is_one_of](is_one_of.cpp)
+- SFINAE to direct overload resolution. [type_traits](type_traits.cpp) [more_type_traits](more_type_traits.cpp)
+- unevaluated oeprands, such as function calls to map types. [more_type_traits](more_type_traits.cpp)
 - recent and classical std::metafunctions in \<type_traits>, \<iterator>, \<numeric_limits>, etc. [example](example.cpp)
 - void_t. [example](example.cpp)
 
