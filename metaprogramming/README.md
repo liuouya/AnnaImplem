@@ -22,6 +22,14 @@
   is_void<T>{}()      // instantiate/call, since c++14
   is_void_v<T>        // a c++14 variable template, since c++17
 ```
+#unevaluated context
+- sizeof, typeid, decltype, noexcept are never evaluated, not even at compile time
+- which means, no code is generated for such operands
+- which means, we need only a declaration, not a definition to use a name in these context
+- an unevaluated function call (e.g. to foo) can usefully map one type to another
+- decltype( foo(declval\<T>()) ), gives foo's return type were it called with a T rvalue
+- the unevaluated call std::declval\<T>() is declared to give an rvalue result of type T. (std::decltype\<T&>() gives lvalue)
+
 
 #constexpr
 ---> comes from abstract algebra :grinning:
